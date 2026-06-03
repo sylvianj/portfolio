@@ -43,6 +43,13 @@
             z-index: -30;
             filter: brightness(0.4); /* Darkens the image slightly for contrast */
         }
+
+        @media (max-width: 760px) {
+            .container::before {
+                background-position: center center;
+                filter: brightness(0.45);
+            }
+        }
         #imgi{
     width: 30px; 
     height: 30px;
@@ -145,6 +152,84 @@
         .skill-list{display:flex;flex-wrap:wrap;gap:8px}
         .skill-pill{background:rgba(255,255,255,0.04);padding:6px 8px;border-radius:999px;font-size:0.95rem}
         .contact-box{background:rgba(255,255,255,0.03);padding:12px;border-radius:6px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+
+        /* Responsive mobile styling */
+        @media (max-width: 1000px) {
+            .content {
+                left: 60%;
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 3.2rem;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .container {
+                min-height: auto;
+                padding-bottom: 20px;
+            }
+
+            .content {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+                width: auto;
+                max-width: none;
+                padding: 32px 16px 40px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 16px 0;
+            }
+
+            .details {
+                margin-top: 20px;
+            }
+
+            .portfolio {
+                padding: 24px 16px;
+            }
+
+            .portfolio h2 {
+                font-size: 1.2rem;
+            }
+
+            .project-card {
+                padding: 14px;
+            }
+
+            .skill-list {
+                justify-content: center;
+            }
+
+            .contact-box {
+                align-items: center;
+                text-align: center;
+            }
+
+            .contact-box p {
+                width: 100%;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .social-links a {
+                width: 36px;
+                height: 36px;
+            }
+        }
         </style>
     
 </head>
