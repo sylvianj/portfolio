@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvia's Portfolio</title>
+    <meta name="description" content="Sylvia — full stack and mobile apps developer based in Nairobi. Contact and CV available." />
+    <meta name="theme-color" content="#000000" />
+    <style>
+        /* Visually-hidden utility for screen readers (no visual change) */
+        .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px}
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Main Container */
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        /* Background Image Styling */
+        .container::before {
+            content: "";
+            background: url('1713978451762.jpeg') no-repeat center 10%/cover; /* Replace 'your-image.jpg' with the path to your image */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -30;
+            filter: brightness(0.4); /* Darkens the image slightly for contrast */
+        }
+        #imgi{
+    width: 30px; 
+    height: 30px;
+    top: 33px;
+    border-radius: 50%;
+    left: 115px;}
+        /* Main Content Styling */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            max-width: 2000px;
+        }
+
+        /* Headline Styling */
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Paragraph Styling */
+        p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Hire Me Button */
+        .hire-btn {
+            background-color: #ff0000;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hire-btn:hover {
+            background-color: #cc0000;
+        }
+
+        /* Additional Info Section */
+        .details {
+            margin-top: 30px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .details a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff0000;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .social-links img,
+        .social-links svg {
+            width: 24px;
+            height: 24px;
+        }
+        .title-case {
+            text-transform: capitalize;}
+        /* Portfolio sections (added below hero) */
+        .portfolio {color:#fff;padding:40px 20px;max-width:900px;margin:20px auto}
+        .portfolio h2{margin:8px 0 12px 0;font-size:1.4rem}
+        .project-card{background:rgba(255,255,255,0.03);padding:12px;border-radius:6px;margin-bottom:10px;text-align:left}
+        .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+        .skill-pill{background:rgba(255,255,255,0.04);padding:6px 8px;border-radius:999px;font-size:0.95rem}
+        .contact-box{background:rgba(255,255,255,0.03);padding:12px;border-radius:6px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+        </style>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Content Area -->
+        <div class="content" role="main" aria-label="Main content">
+            <h1>Hi, I'm Sylvia</h1>
+            <p class="title-case">full stack and mobile apps software developer</p>
+            <a href="#contact" class="hire-btn">Hire Me</a>
+
+            <div class="details">
+                
+                <p>I'm a full stack and mobile apps developer based in Nairobi  Kenya.</p>
+                <p>Looking for a developer to build your brand and grow your business? Let's partner.</p>
+                <a href="cv.pdf" class="cv-link" download>Download CV</a>
+            </div>
+
+            <!-- Hidden extra info for screen readers (no visual change) -->
+            <div id="extra-info" class="visually-hidden" aria-hidden="false">
+                <h2>Projects</h2>
+                <p>These are some of my projects. To see more, visit my GitHub: https://github.com/sylvianj</p>
+                <p>SheLoans — https://github.com/sylvianj/SheLoans</p>
+                <p>Sales Project — https://github.com/sylvianj/Sales-Project</p>
+                <h2>Skills</h2>
+                <p>JavaScript, React, Kotlin, Python, Node.js, HTML, CSS, SQL, M-Pesa integration (payments & callbacks).</p>
+                <h2>Contact</h2>
+                <p>Email: sylvianjoki37@gmail.com</p>
+                <p>LinkedIn: http://www.linkedin.com/in/sylvia-njoki-9128b926b</p>
+                <p>Instagram: https://www.instagram.com/slyfabby/</p>
+                <p>WhatsApp: https://wa.me/254768998558</p>
+            </div>
+        </div>
+    </div>
+    <!-- Additional portfolio content (keeps hero appearance unchanged) -->
+    <section class="portfolio" aria-label="Portfolio sections">
+        <h2>Projects</h2>
+        <p style="margin:0 0 16px;color:#ccc">These are some of my projects. To see more, visit my GitHub: <a href="https://github.com/sylvianj" target="_blank" rel="noopener noreferrer">github.com/sylvianj</a></p>
+        <div class="project-card">
+            <strong>SheLoans</strong>
+            <p style="margin:6px 0;color:#bbb">A microloan management app with user onboarding and payment integrations. View the project on GitHub: <a href="https://github.com/sylvianj/SheLoans" target="_blank" rel="noopener noreferrer">github.com/sylvianj/SheLoans</a></p>
+        </div>
+
+        <div class="project-card">
+            <strong>Sales Project</strong>
+            <p style="margin:6px 0;color:#bbb">Sales tracking and reporting tool built with React and Node.js. View the project on GitHub: <a href="https://github.com/sylvianj/Sales-Project" target="_blank" rel="noopener noreferrer">github.com/sylvianj/Sales-Project</a></p>
+        </div>
+
+        <h2>Skills & Tech</h2>
+        <div class="skill-list">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Kotlin</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">M-Pesa Integration</span>
+            <span class="skill-pill">HTML/CSS</span>
+            <span class="skill-pill">SQL</span>
+        </div>
+
+        <h2 style="margin-top:18px">Experience</h2>
+        <div class="project-card">
+            <p style="margin:6px 0;color:#bbb">3+ years building web and mobile apps; experience with payment integrations, REST APIs, and deploying apps to production.</p>
+        </div>
+
+        <h2 id="contact" style="margin-top:18px">Contact</h2>
+        <div class="contact-box">
+            <p style="margin:0;color:#fff;font-weight:600">Email me at: sylvianjoki37@gmail.com</p>
+            <p style="margin:10px 0 6px 0;color:#bbb;">Or connect with me:</p>
+            <div class="social-links" aria-label="Contact">
+                <a href="https://github.com/sylvianj" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="download.png" id="imgi" alt="GitHub"></a>
+                <a href="http://www.linkedin.com/in/sylvia-njoki-9128b926b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="OIP (2).jpeg" id="imgi" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/slyfabby/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="OIP (3).jpeg" id="imgi" alt="Instagram"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
